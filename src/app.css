@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-bg text-white;
+}
+
+.board > div > div {
+  @apply border-t border-r;
+}
+
+.board > div:first-child > div {
+  @apply border-t-transparent;
+}
+
+.board > div > div:last-child {
+  @apply border-r-transparent;
+}
